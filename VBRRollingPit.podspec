@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "VBRRollingPit"
-  s.version      = "0.0.1"
+  s.version      = "1.0.0"
   s.summary      = "Simple, beatiful and interactive UITabBar"
 
   # This description is used to generate tags and improve search results.
@@ -31,7 +31,7 @@ Pod::Spec.new do |s|
                    DESC
 
   s.homepage     = "https://github.com/v-braun/VBRRollingPit"
-  s.screenshots  = "https://github.com/v-braun/VBRRollingPit/blob/master/screen.gif"
+  s.screenshots  = "https://raw.githubusercontent.com/v-braun/VBRRollingPit/master/screen.gif"
 
 
   # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
