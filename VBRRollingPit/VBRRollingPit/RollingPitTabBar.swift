@@ -254,6 +254,17 @@ extension CGFloat {
         return animation
     }
     
+    private func replaceAnimation(layer :CAShapeLayer, withNew : CABasicAnimation, forKey: String){
+        
+        let existing = layer.animation(forKey: forKey) as? CABasicAnimation
+        if existing != nil{
+            withNew.fromValue = existing!.toValue
+        }
+        
+        layer.removeAnimation(forKey: forKey)
+        layer.add(withNew, forKey: forKey)
+    }
+    
     private func moveCircleAnimated(){
         let bgMaskNewPath = self.createPitMaskPath(rect: self.bounds)
         let circleNewPath = self.createCirclePath()
@@ -261,8 +272,10 @@ extension CGFloat {
         let bgAni = createPathMoveAnimation(toVal: bgMaskNewPath)
         let circleAni = createPathMoveAnimation(toVal: circleNewPath)
         
-        self.backgroundMask.add(bgAni, forKey: nil)
-        self.circle.add(circleAni, forKey: nil)
+        
+        self.replaceAnimation(layer: backgroundMask, withNew: bgAni, forKey: "move_animation")
+        self.replaceAnimation(layer: circle, withNew: circleAni, forKey: "move_animation")
+        
     }
     
     private func layoutElements(selectedChanged : Bool){
