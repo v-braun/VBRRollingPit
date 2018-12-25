@@ -50,6 +50,9 @@ Additional properties are available in the Attribute inspector:
 ![image](attribute-inspector.jpg)
 
 
+## Related Projects
+- [Cocoa Rocks](https://cocoa.rocks/): this and other awesome Cocoa Controls
+- [awesome-cocoa](https://github.com/v-braun/awesome-cocoa): an awesome list of cocoa controls
 
 ### Known Issues
 
