@@ -1,5 +1,5 @@
 # VBRRollingPit
-> Simple, beatiful and interactive UITabBar
+> Simple, beautiful and interactive UITabBar
 
 By [v-braun - viktor-braun.de](https://viktor-braun.de).
 
